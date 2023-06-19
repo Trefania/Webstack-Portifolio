@@ -18,7 +18,7 @@ Google slide presentation with:
 Name of the project
 List of team members
 Description of the project
-Learning objectives
+Learning objectives..
 Technologies used
 Third services used if applicable
 Challenges already identified
