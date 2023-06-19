@@ -2,6 +2,7 @@ Webstack - Portfolio Project - Pitch
 
 Tasks
 0. Pitch me your idea!
+
 mandatory
 As mentioned in the beginning of this project, you have some questions to ask yourself:
 
