@@ -50,7 +50,8 @@ form {
   margin: 10px auto;
   border-radius: 15px;
   align-items: center;
-  border-bottom: 1px solid rgb(174, 29, 29);
+  border-bottom: 1px solid rgb(94, 92, 92);
+  opacity: 0.9;
 }
 .form-item:hover {
   border: 1px solid rgb(255, 33, 33);
@@ -104,7 +105,7 @@ button {
   box-shadow: 0 0 2px rgba(23, 20, 241, 0.637);
 }
 .gl:hover {
-  background: rgba(9, 255, 50, 0.671);
+  background: rgba(0, 149, 25, 0.671);
   border: none;
   box-shadow: 0 0 2px rgba(11, 162, 0, 0.671);
 }
