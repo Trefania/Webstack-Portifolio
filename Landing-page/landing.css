@@ -43,10 +43,18 @@ ul {
   }
 }
 /* End Global Rules */
-.landing-page{
-  background-image: url(image-11.jpg);
+body, .landing-page{
+  background-image: url(DataRobot.jpg);
   background-size: cover;
   width: 100%;
+  height: 600px;
+  margin: auto;
+}
+
+.cont{
+  padding-left: 50%;
+  padding-top: 20%;
+
 }
 /* Start Landing Page */
 .landing-page header {
@@ -62,6 +70,7 @@ ul {
 .landing-page header .container {
   display: flex;
   align-items: center;
+
   justify-content: space-between;
 }
 @media (max-width: 767px) {
@@ -103,51 +112,19 @@ ul {
     margin-left: auto;
   }
 }
-.landing-page header .links li:last-child {
-  border-radius: 20px;
-  padding: 10px 20px;
+.landing-page .cont li:last-child {
+  border-radius: 40px;
+  padding: 10px;
+  width: 120px;
   color: #FFF;
-  background-color: #d82800;
+  display: flex;
+  align-items: center;
+  background-color: #da0000;
 }
 .landing-page header .links li:not(:last-child):hover {
   color: #00ff04;
 }
-.landing-page .content .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 140px;
-  min-height: calc(100vh - 80px);
-}
-@media (max-width: 767px) {
-  .landing-page .content .container {
-    gap: 0;
-    min-height: calc(100vh - 101px);
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
-}
-@media (max-width: 767px) {
-  .landing-page .content .info {
-    text-align: center;
-    margin-bottom: 10px 
-  }
-}
-.landing-page .content .info h1 {
-  color: #5d5d5d;
-  font-size: 44px;
-}
 
-.landing-page .content .info button {
-  border-radius: 12px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  cursor: pointer;
-  color: #FFF;
-  align-items: center;
-  background-color: #1700b0;
-  
-}
 .landing-page .content .image img {
   max-width: 100%;
 }

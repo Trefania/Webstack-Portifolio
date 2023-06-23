@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>login page</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="boxicons/css/boxicons.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Login form</title>
+
 </head>
+
 <body>
-    <div class="box">
-        <div class="container">
-            <div class="header">
-                <span>Have An Account?</span>
-                <header>login</header>
-            </div>
 
-        <div class="input-field">
-            <input type="text" class="input" placeholder="Username" required>
-            <i class="bx bx-user"></i>
-        </div>
+  <!-- for background -->
+  <div class="background"></div>
 
-        <div class="input-field">
-            <input type="password" class="input" placeholder="Password" required>
-            <i class="bx bx-lock-alt"></i>
-        </div>
-        <div class="input-field">
-            <input type="submit" class="submit" value="login">
-        </div>
+  <!-- for form container -->
+  <div class="container">
+    <h2>Login</h2>
+    <form action="">
 
-        <div class="bottom">
-            <div class="left">
-                <input type="checkbox" id="check">
-                <label for="check">Remember Me!</label>
-            </div>
-            <div class="right">
-                <label>
-                    <a href="#">Forgot password?</a>
-                </label>
-            </div>
-        </div>
-    </div>
-</div>
+      <div class="form-item">
+        
+        <input type="text" name="user" id="user" placeholder="Email or Username">
+      </div>
+
+      <div class="form-item">
+        <input type="password" name="pass" id="pass" placeholder="password">
+      </div>
+
+      <button type="submit">LOGIN</button>
+
+      <p>Or <br>Login With</p>
+
+      <div class="options">
+        <button class="fb">Facebook Account</button>
+        <button class="gl">Google Account</button>
+      </div>
+
+      <p>New User? <a href="#"> Create an Account</a></p>
+
+    </form>
+  </div>
 </body>
+
 </html>
