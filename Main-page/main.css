@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(Ai-machine.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  max-height: max-content;
+
+}
+
+p {
+  font-size: 30px;
+  color: antiquewhite;
+  justify-content: center;
+  bottom: 90%;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-size: 18px;
+  padding: 5px 16px;
+  margin: 5px 15px;
+  width: 180px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.7s ease;
+  margin-top: 30%;
+
+}
+.In:hover {
+  background: #ff1515;
+  border: none;
+  box-shadow: 0 0 2px rgba(23, 20, 241, 0.637);
+}
+.up:hover {
+  background: #008817e9;
+  border: none;
+  box-shadow: 0 0 2px rgba(11, 162, 0, 0.671);
+}

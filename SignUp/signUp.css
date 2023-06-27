@@ -1,9 +1,9 @@
 :root {
     /* COLORS */
-    --white: #e9e9e9;
+    --white: #a5a5a5;
     --gray: #333;
-    --blue: #0367a6;
-    --lightblue: #008997;
+    --blue: #03a608;
+    --lightblue: #009785;
   
     /* RADII */
     --button-radius: 0.7rem;
@@ -20,7 +20,7 @@
   body {
     align-items: center;
     background-color: var(--white);
-    background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+    background: url(hom2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,8 +102,8 @@
   }
   
   .overlay {
-    background-color: var(--lightblue);
-    background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+    background-image: url(hom2.jpg);
+    background: url(Al2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

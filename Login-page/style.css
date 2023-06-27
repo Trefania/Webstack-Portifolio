@@ -6,7 +6,7 @@ body {
 }
 
 .background {
-  background: url(img-2.jpg)
+  background: url(AI1.png)
     rgba(0, 0, 0, 0.61);
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,6 @@ body {
   left: 0;
   right: 0;
   z-index: -1;
-  filter: blur(5px);
   min-height: 800px;
 
 }
@@ -73,12 +72,12 @@ button[type="submit"] {
   font-size: 15px;
   margin: 10px auto;
   padding: 8px;
-  background: rgba(134, 134, 134, 0.72);
+  background: rgba(205, 205, 205, 0.72);
   border: none;
   color: white;
 }
 button[type="submit"]:hover {
-  background: rgba(1, 1, 1, 0.678);
+  background: rgba(8, 43, 183, 0.857);
 }
 p:first-of-type {
   margin: 0;
@@ -113,13 +112,13 @@ button {
 p {
   font-size: 18px;
   margin: 5px;
-  color: blue;
+  color: rgb(221, 221, 225);
 }
 a {
   color: white;
 }
 a:hover {
-  color: rgb(176, 159, 159);
+  color: rgb(59, 8, 227);
 }
 
 @media screen and (max-width: 550px) {
