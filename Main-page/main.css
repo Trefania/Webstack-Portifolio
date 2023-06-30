@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: url(Ai-machine.jpg);
+  background: url(AI1.png);
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
@@ -38,12 +38,14 @@ button {
   cursor: pointer;
   transition: all 0.7s ease;
   margin-top: 30%;
+  margin-left: 15%;
 
 }
 .In:hover {
   background: #ff1515;
   border: none;
   box-shadow: 0 0 2px rgba(23, 20, 241, 0.637);
+
 }
 .up:hover {
   background: #008817e9;
