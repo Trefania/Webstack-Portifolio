@@ -8,6 +8,7 @@ Flask-Bcrypt==1.0.1
 Flask-Mail==0.9.1
 Flask-RESTful==0.3.9
 Flask-SQLAlchemy==2.5.1
+Flask-Auth==0.85
 greenlet==1.1.2
 importlib-metadata==4.12.0
 itsdangerous==2.1.2
@@ -16,7 +17,6 @@ MarkupSafe==2.1.1
 marshmallow==3.17.0
 packaging==21.3
 psycopg-binary==3.0.16
-psycopg2==2.9.3
 pycparser==2.21
 PyJWT==2.4.0
 pyparsing==3.0.9
