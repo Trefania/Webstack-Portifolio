@@ -34,12 +34,16 @@ button {
   margin: 5px 15px;
   width: 180px;
   background: transparent;
-  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.7s ease;
   margin-top: 30%;
   margin-left: 15%;
 
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 .In:hover {
   background: #ff1515;
