@@ -1,5 +1,4 @@
 # assist/server/__init__.py
-
 import os
 
 from flask import Flask
@@ -16,3 +15,6 @@ app.config.from_object(app_settings)
 
 bcrypt = Bcrypt(app)
 db = SQLAlchemy(app)
+
+from assist.server.auth.views import auth_blueprint
+app.register_blueprint(auth_blueprint)

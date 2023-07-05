@@ -1,6 +1,7 @@
 # manage.py
 
 
+from assist.server import app, db, models
 import os
 import unittest
 import coverage
@@ -18,8 +19,6 @@ COV = coverage.coverage(
     ]
 )
 COV.start()
-
-from assist.server import app, db
 
 
 migrate = Migrate(app, db)
