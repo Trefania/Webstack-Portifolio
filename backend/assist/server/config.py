@@ -1,9 +1,14 @@
 # assist/server/config.py
 
 import os
+from dotenv import load_dotenv, find_dotenv
+
 basedir = os.path.abspath(os.path.dirname(__file__))
-mysql_database = 'mysql+mysqldb://root:root@localhost:3306/'
-database_name = 'assist'
+
+load_dotenv(find_dotenv())
+
+mysql_database = os.getenv('MYSQL_URL')
+database_name = os.getenv('DATABASE_NAME')
 
 
 class BaseConfig:
