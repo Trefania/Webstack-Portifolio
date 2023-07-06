@@ -1,0 +1,25 @@
+# CURL COMMANDS TO TEST THE ENDPOINTS
+
+## Register
+curl -L -X POST -H "Content-Type: application/json" -d '{"password": "joe123", "email": "joe@email.com"}' http://0.0.0.0:5000/auth/register
+
+## Login
+curl -L -X POST -H "Content-Type: application/json" -d '{"password": "joe123", "email": "joe@email.com"}' http://0.0.0.0:5000/auth/login
+
+## USER STATUS
+curl -L -X GET -H "Content-Type: application/json" -H "Authorization: Bearer <jwt_token>" http://0.0.0.0:5000/auth/status
+
+## DELETE USER
+curl -L -X DELETE -H "Content-Type: application/json" -H "Authorization: Bearer <jwt_token>" http://0.0.0.0:5000/auth/users/<email>
+
+## LOGOUT
+curl -L -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <jwt_token>" http://0.0.0.0:5000/auth/logout
+
+## Forget password
+curl -L -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <jwt_token>" -d {"email": "<user_email>" } http://0.0.0.0:5000/auth/forget-password
+
+## Reset password
+curl -L -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <jwt_token>" -d { "new_password": <put in a new password> } http://0.0.0.0:5000/auth/reset-password/<token sent to your mail>
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4ODY2MzQwNiwianRpIjoiNTJlZmNjOTQtNjQ1Yi00YWQ0LTg3YjEtNTllOWEwZTBlMjEwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1jZG9uYWxkc2FtdXJlOTFAZ21haWwuY29tIiwibmJmIjoxNjg4NjYzNDA2LCJleHAiOjE2ODg2NjUyMDZ9.Mu9EC3WMGN_9mrfaUAMBTRgEMcFyR4K0OzD10tZqPTc
+
