@@ -242,7 +242,7 @@ class ForgotPasswordView(MethodView):
                 email=current_user).first()
             if user:
                 token = create_access_token(
-                    identity=user.email, expires_delta=False)
+                    identity=user.email, expires_delta=True)
 
                 reset_link = f'http://0.0.0.0:5000/reset-password?token={token}'
                 msg = Message('Password Reset', sender=os.getenv('MAIL_USERNAME'),
