@@ -1,29 +1,37 @@
-body{
-  padding: auto;
-  margin: auto;
-  background: fixed;
-  background-color: rgb(6, 6, 26);
-}
+<div> 
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">M &#9776;</button>
+      <div class="dropdown-content">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <header class="header">
+      <p>Welcome To Our OpenAI</p>
+    </header>
+    <div class="chat-area">
+      <div class="chat-message">
+        <p>Taking Conventional AI Beyond 2021.</p>
+        <span>Assist AI</span>
+      </div>
+    </div>
+    <div class="input-area">
+      <input type="text" placeholder="Type here..">
+      <button>Send</button>
+    </div>
+  </div>
+</div>
 
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 0px;
-  text-align: center;
 
 
-}
 
-.header {
-  margin-bottom: 40px;
-}
 
-.header h1 {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #e2e2e2;
-}
+
 
 .header p {
   font-size: 35px;
@@ -113,7 +121,7 @@ body{
 }
 
 .navbar{
-  height: 50px;
+  height: 500px;
   padding: 12px 14px;
   width: 100px;
   background-color: aqua;
