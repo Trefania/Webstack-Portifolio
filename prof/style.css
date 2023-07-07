@@ -1,15 +1,25 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
+ 
+/*This is default styling*/
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+ /*This is body styling area*/
 body{
   background-color: #000222;
 }
+
+/*This is logo styling area */
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+
+/*This sidebar(a) styling*/
 .sidebar {
   position: fixed;
   height: 100%;
@@ -18,14 +28,17 @@ body{
   padding: 15px;
   z-index: 99;
 }
-.logo {
-  font-size: 25px;
-  padding: 0 15px;
-}
 .sidebar a {
   color: #fff;
   text-decoration: none;
 }
+.sidebar img{
+  position: relative;
+  top: 10%;
+  right: 55%;
+}
+
+/*This is menu styling*/
 .menu-content {
   position: relative;
   height: 100%;
@@ -42,12 +55,13 @@ body{
   list-style: none;
   transition: all 0.4s ease;
 }
-
 .menu-title {
   color: #fff;
   font-size: 14px;
   padding: 15px 20px;
 }
+
+/*This is styling of item (a) and submenu-item*/
 .item a,
 .submenu-item {
   padding: 16px;
@@ -58,12 +72,15 @@ body{
 .item i {
   font-size: 12px;
 }
+
+/* This is hover styling for item(class) ,submenu(class) and menu-title(class)*/
 .item a:hover,
 .submenu-item:hover,
 .submenu .menu-title:hover {
   background: rgba(32, 49, 245, 0.1);
 }
 
+ /* The styling of navbar and main class together*/
 .navbar,
 .main {
   left: 260px;
@@ -71,11 +88,15 @@ body{
   transition: all 0.5s ease;
   z-index: 1000;
 }
+
+/*This conbination of styling of closing of sidebar*/
 .sidebar.close ~ .navbar,
 .sidebar.close ~ .main {
   left: 0;
   width: 100%;
 }
+
+/*This nav bar styling*/
 .navbar {
   position: fixed;
   color: #fff;
@@ -87,6 +108,8 @@ body{
 .navbar #sidebar-close {
   cursor: pointer;
 }
+
+/* This Main styling field */
 .main {
   position: relative;
   display: flex;
@@ -98,48 +121,45 @@ body{
   background: #000222;
 }
 
-
+/* This is chat area styling*/
  .chat-area {
   background-color: rgba(32, 49, 245, 0.1);
   border-radius: 4px;
   color: #fdeded;
-  padding: 10px;
+  padding: 1px;
   position: relative;
-  left: 4.9%;
-  height: auto;
-  width: 75%;
+  left: 29%;
+  bottom: 220px;
+  width: 70%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 60%;
 }
-
 .chat-area .chat-message {
   padding: 5%;
   border-bottom: 1px solid #f7f7f7;
 
 }
-
 .chat-area .chat-message p {
   font-size: 16px;
   margin-bottom: 0;
 }
-
 .chat-area .chat-message span {
   font-size: 12px;
   color: #999;
 }
 
+ /*This is input area field styling*/
 .input-area {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin-top: 50%;
-  right: 100%;
   position: relative;
-  right: 42%;
+  right: auto;
   top: 50%;
   width: 70%;
   padding: 5px;
+  right:15%;
 }
 
 .input-area input[type="text"] {
@@ -151,17 +171,31 @@ body{
   outline: 0;
 }
 
+/* This is send icon styling*/
 .main .img a img{
 position: relative;
-right: 400px;
+right: 249px;
 height: 55px;
-
-bottom: -250px;
+bottom: -320px;
 }
 
+/* A Span styling*/
 .bar span{
   height: 500px;
   position: relative;
   left: 100px;
   background-color: aqua;
+}
+
+/*This is chatfield for user response after assist.ai has fetch the answers*/
+#chatfield{
+  position:relative;
+  margin: auto;
+  padding: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  background-color: antiquewhite;
+  color: rgba(0, 0, 0, 0);
 }
