@@ -1,0 +1,167 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: #000222;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: #04002f;
+  padding: 15px;
+  z-index: 99;
+}
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.menu-title {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+.item i {
+  font-size: 12px;
+}
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(32, 49, 245, 0.1);
+}
+
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 10px 5px;
+  font-size: 25px;
+  background: #00520c;
+  cursor: pointer;
+}
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+.main {
+  position: relative;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  z-index: 100;
+  background: #000222;
+}
+
+
+ .chat-area {
+  background-color: rgba(32, 49, 245, 0.1);
+  border-radius: 4px;
+  color: #fdeded;
+  padding: 10px;
+  position: relative;
+  left: 4.9%;
+  height: auto;
+  width: 75%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 60%;
+}
+
+.chat-area .chat-message {
+  padding: 5%;
+  border-bottom: 1px solid #f7f7f7;
+
+}
+
+.chat-area .chat-message p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.chat-area .chat-message span {
+  font-size: 12px;
+  color: #999;
+}
+
+.input-area {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 50%;
+  right: 100%;
+  position: relative;
+  right: 42%;
+  top: 50%;
+  width: 70%;
+  padding: 5px;
+}
+
+.input-area input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+}
+
+.main .img a img{
+position: relative;
+right: 400px;
+height: 55px;
+
+bottom: -250px;
+}
+
+.bar span{
+  height: 500px;
+  position: relative;
+  left: 100px;
+  background-color: aqua;
+}

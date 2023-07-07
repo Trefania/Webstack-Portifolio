@@ -1,0 +1,128 @@
+<div> 
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">M &#9776;</button>
+      <div class="dropdown-content">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <header class="header">
+      <p>Welcome To Our OpenAI</p>
+    </header>
+    <div class="chat-area">
+      <div class="chat-message">
+        <p>Taking Conventional AI Beyond 2021.</p>
+        <span>Assist AI</span>
+      </div>
+    </div>
+    <div class="input-area">
+      <input type="text" placeholder="Type here..">
+      <button>Send</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+.header p {
+  font-size: 35px;
+  font-weight: 400;
+  color: #d1caca;
+  margin-bottom: 10px;
+}
+
+.chat-area {
+  background-color: #1817397a;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+  height: 60%;
+}
+
+.chat-area .chat-message {
+  padding: 20px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.chat-area .chat-message p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.chat-area .chat-message span {
+  font-size: 12px;
+  color: #999;
+}
+
+.input-area {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.input-area input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+}
+
+.input-area button {
+  background-color: #1ac000;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+        
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+        
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+        
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar{
+  height: 500px;
+  padding: 12px 14px;
+  width: 100px;
+  background-color: aqua;
+}
