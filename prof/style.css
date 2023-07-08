@@ -159,9 +159,9 @@ height: 55px;
 bottom: -250px;
 }
 
-.bar span{
-  height: 500px;
-  position: relative;
-  left: 100px;
-  background-color: aqua;
+.inner-container {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  float: right;
 }
