@@ -1,0 +1,128 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.background {
+  background: url(AI1.png)
+    rgba(0, 0, 0, 0.61);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  min-height: 800px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  margin: 10vh auto;
+  background: transparent;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+  border-radius: 25px;
+}
+h2 {
+  font-size: 30px;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+.form-item {
+  display: flex;
+  width: 90%;
+  background: transparent;
+  margin: 10px auto;
+  border-radius: 15px;
+  align-items: center;
+  border-bottom: 1px solid rgb(94, 92, 92);
+  opacity: 0.9;
+}
+.form-item:hover {
+  border: 1px solid rgb(255, 33, 33);
+}
+input {
+  background: transparent;
+  width: 80%;
+  height: 30px;
+  outline: none;
+  border: none;
+  margin: auto;
+  color: white;
+  font-size: 17px;
+}
+
+
+button[type="submit"] {
+  width: 180px;
+  font-size: 15px;
+  margin: 10px auto;
+  padding: 8px;
+  background: rgba(205, 205, 205, 0.72);
+  border: none;
+  color: white;
+}
+button[type="submit"]:hover {
+  background: rgba(8, 43, 183, 0.857);
+}
+p:first-of-type {
+  margin: 0;
+}
+.options {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+button {
+  font-size: 18px;
+  padding: 5px 16px;
+  margin: 5px 15px;
+  width: 180px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+.fb:hover {
+  background: rgba(26, 22, 255, 0.637);
+  border: none;
+  box-shadow: 0 0 2px rgba(23, 20, 241, 0.637);
+}
+.gl:hover {
+  background: rgba(0, 149, 25, 0.671);
+  border: none;
+  box-shadow: 0 0 2px rgba(11, 162, 0, 0.671);
+}
+
+p {
+  font-size: 18px;
+  margin: 5px;
+  color: rgb(221, 221, 225);
+}
+a {
+  color: white;
+}
+a:hover {
+  color: rgb(59, 8, 227);
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 90%;
+  }
+}
