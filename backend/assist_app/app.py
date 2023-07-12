@@ -9,26 +9,24 @@ engine = Ai_Engine()
 
 
 @app.route('/sign-up', methods=['POST'])
-    def sign_up():
-        # User Registration Logic
-        # ...
+def sign_up():
+    pass
 
 
 @app.route('/login', methods=['POST'])
-    def login():
-        # User Authentication Logic
-        # ...
+def login():
+    pass
 
 
 @app.route('/chat', methods=['POST'])
-    def chat():
-        """Interact with Engine as a User"""
-        user_input = request.json.get('user_input')
+def chat():
+    """Interact with Engine as a User"""
+    user_input = request.json.get('user_input')
 
-        response = engine.get_bot_response(user_input)
+    response = engine.get_bot_response(user_input)
 
-        response_data = {
-            'response': response
-        }
+    response_data = {
+        'response': response
+    }
 
-        return jsonify(response_data)
+    return jsonify(response_data)
