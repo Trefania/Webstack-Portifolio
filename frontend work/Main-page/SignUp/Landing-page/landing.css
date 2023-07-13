@@ -7,6 +7,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #FFF;
 }
 ul {
   list-style: none;
@@ -104,18 +105,18 @@ body, .landing-page{
     gap: 10px;
   }
 }
-.landing-page header .links li {
+.landing-page header .links li a {
   margin-left: 30px;
   color: #ffffff;
   cursor: pointer;
   transition: .3s;
 }
 @media (max-width: 767px) {
-  .landing-page header .links li {
+  .landing-page header .links li a {
     margin-left: auto;
   }
 }
-.landing-page .cont li:last-child {
+.landing-page .cont li a:last-child {
   border-radius: 40px;
   padding: 10px;
   width: 120px;
@@ -123,7 +124,7 @@ body, .landing-page{
   display: flex;
   background-color: #da0000;
 }
-.landing-page header .links li:not(:last-child):hover {
+.landing-page header .links li a:not(:last-child):hover {
   color: #00ff04;
 }
 
