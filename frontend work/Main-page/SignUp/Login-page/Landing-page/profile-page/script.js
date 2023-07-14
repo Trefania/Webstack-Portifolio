@@ -3,7 +3,7 @@ function toggleSidebar() {
   sidebar.style.left = sidebar.style.left === '0px' ? '-250px' : '0px';
 }
 
-async function sendMessage() {
+function sendMessage() {
   const userInput = document.getElementById('userInput');
   const message = userInput.value;
   if (message.trim() !== '') {
@@ -15,25 +15,13 @@ async function sendMessage() {
     userInput.value = '';
     chatBody.scrollTop = chatBody.scrollHeight;
 
-    // Send user message to the server and receive JSON response
-    const response = await fetch('/path-to-your-server-endpoint', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ message })
-    });
-
-    if (response.ok) {
-      const jsonResponse = await response.json();
+    // Simulate bot response
+    setTimeout(() => {
       const botMessage = document.createElement('div');
       botMessage.classList.add('message', 'received');
-      botMessage.innerHTML = `<p>${jsonResponse.message}</p>`;
+      botMessage.innerHTML = '<p>Thank you for your message. How can I help you further?</p>';
       chatBody.appendChild(botMessage);
       chatBody.scrollTop = chatBody.scrollHeight;
-    } else {
-      // Handle server error
-      console.error('Error:', response.status);
-    }
+    }, 1000);
   }
 }
