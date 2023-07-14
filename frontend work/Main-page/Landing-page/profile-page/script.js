@@ -1,3 +1,8 @@
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.left = sidebar.style.left === '0px' ? '-250px' : '0px';
+}
+
 function sendMessage() {
   const userInput = document.getElementById('userInput');
   const message = userInput.value;
@@ -10,23 +15,13 @@ function sendMessage() {
     userInput.value = '';
     chatBody.scrollTop = chatBody.scrollHeight;
 
-    // Send user message to the server and receive JSON response
-    $.ajax({
-      url: '/profile/chat/chat_id',
-      type: 'POST',
-      contentType: 'application/json',
-      data: JSON.stringify({ message }),
-      success: function(jsonResponse) {
-        const botMessage = document.createElement('div');
-        botMessage.classList.add('message', 'received');
-        botMessage.innerHTML = `<p>${jsonResponse.message}</p>`;
-        chatBody.appendChild(botMessage);
-        chatBody.scrollTop = chatBody.scrollHeight;
-      },
-      error: function(xhr, status, error) {
-        // Handle server error
-        console.error('Error:', error);
-      }
-    });
+    // Simulate bot response
+    setTimeout(() => {
+      const botMessage = document.createElement('div');
+      botMessage.classList.add('message', 'received');
+      botMessage.innerHTML = '<p>Thank you for your message. How can I help you further?</p>';
+      chatBody.appendChild(botMessage);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }, 1000);
   }
 }
