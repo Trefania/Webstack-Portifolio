@@ -2,3 +2,6 @@
 env/
 .pytest_cache/
 hidden.txt
+.vscode/
+ai_engine/__pycache__
+hidden.txt
