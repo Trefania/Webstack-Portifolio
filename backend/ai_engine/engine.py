@@ -6,10 +6,12 @@ Content Generation From OpenAI API
 import os
 import openai
 
+
 class Ai_Engine:
     """
     An AI Content Generation Engine
     """
+
     def __init__(self, api_key_path='hidden.txt'):
         self.prompt_list = [
             'You will pretend to be a very knowledgeable, fun, intuitive, kind, and considerate assistant bot. Your name is `ASSIST AI`',
@@ -74,8 +76,3 @@ class Ai_Engine:
             user_input = input('User: ')
             response = self.get_bot_response(user_input)
             print(f'Assist AI: {response}')
-
-if __name__ == '__main__':
-    engine = Ai_Engine()
-    engine.main()
-

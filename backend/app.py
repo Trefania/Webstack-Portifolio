@@ -1,11 +1,13 @@
 """Main Application API Routes"""
 
 from flask import Flask, render_template, request, jsonify
-from ai_engine import Ai_Engine
+from ai_engine.engine import Ai_Engine
 
 
 app = Flask(__name__)
 engine = Ai_Engine()
+
+engine.main()
 
 
 @app.route('/sign-up', methods=['POST'])
@@ -30,3 +32,7 @@ def chat():
     }
 
     return jsonify(response_data)
+
+
+if __name__ == '__main__':
+    app.run()
