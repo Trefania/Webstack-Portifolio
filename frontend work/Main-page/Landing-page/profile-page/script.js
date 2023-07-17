@@ -16,6 +16,7 @@ async function sendMessage() {
     chatBody.scrollTop = chatBody.scrollHeight;
 
     // Send user message to the server and receive JSON response
+    var chatid = '';
     const response = await fetch('/path-to-your-server-endpoint', {
       method: 'POST',
       headers: {
