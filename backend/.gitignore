@@ -1,0 +1,6 @@
+assist_app/.env
+env
+hidden.txt
+assist_app/hidden.txt
+assist_app/__pycache__/
+.env
