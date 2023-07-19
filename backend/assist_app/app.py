@@ -14,6 +14,18 @@ app.config['MYSQL_USER'] = 'your_mysql_username'
 app.config['MYSQL_PASSWORD'] = 'your_mysql_password'
 app.config['MYSQL_DB'] = 'your_mysql_database'
 
+@app.before_first_request
+def create_table():
+    cur = mysql.connection.cursor()
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                email VARCHAR(255) NOT NULL,
+                name VARCHAR(255) NOT NULL,
+                password VARCHAR(255) NOT NULL
+        )
+''')
+    mysql.connection.commit()
 
 engine = Ai_Engine()
 mysql = MySQL(app)
