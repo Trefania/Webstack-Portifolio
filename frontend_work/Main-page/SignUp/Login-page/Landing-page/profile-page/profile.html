@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile page</title>
+	<link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+  <div class="sidebar">
+    <ul class="menu">
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">New Chat</a></li>
+      <li><a href="#">LogOut</a></li>
+      <li><a href="#">Share</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Assist.AI</h2>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="message received">
+          <p>Hello there! How can I assist you today?</p>
+        </div>
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="profile.js"></script>
+</body>
+</html>
