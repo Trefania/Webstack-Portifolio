@@ -1,15 +1,15 @@
 // Mapping of questions and responses
-const responses = {
-  "hi": "Hello there!",
-  "how are you?": "Unfortunately I don't have feelings, but thank you for asking! I'm here to assist you with any further questions you have.",
-  "Thank you!": "You're Welcome!, Anything Else?",
-  "what is assist.ai?": "Assist.AI is a smart chatbot that can have conversations with people.      It is designed to understand your questions and provide intelligent responses, meaning it can understand the context of the conversation and give relevant responses. Assist.ai is built using advanced technology called 'natural language processing' and 'machine learning'. These techniques help the chatbot understand what you're saying and respond in a way that makes sense.",
-  "what's your name?": "I am Assist.AI, nice to meet you!",
-  "okay": "Great! Anything else, l can help you with?",
-  "America's Independence?": "America gained independence on 4 July 1776. This date is celebrated as Independence Day in the United States and marks the adoption of the Declaration of Independence, which declared the thirteen American colonies free and independent from British rule.",
-  "what is it designed to do?": "It is designed to understand human languges and provide intelligent responses, meaning it can understand the context of the conversation and give relevant responses.",
-  // Add more question-response pairs as needed
-};
+// const responses = {
+//   "hi": "Hello there!",
+//   "how are you?": "Unfortunately I don't have feelings, but thank you for asking! I'm here to assist you with any further questions you have.",
+//   "Thank you!": "You're Welcome!, Anything Else?",
+//   "what is assist.ai?": "Assist.AI is a smart chatbot that can have conversations with people.      It is designed to understand your questions and provide intelligent responses, meaning it can understand the context of the conversation and give relevant responses. Assist.ai is built using advanced technology called 'natural language processing' and 'machine learning'. These techniques help the chatbot understand what you're saying and respond in a way that makes sense.",
+//   "what's your name?": "I am Assist.AI, nice to meet you!",
+//   "okay": "Great! Anything else, l can help you with?",
+//   "America's Independence?": "America gained independence on 4 July 1776. This date is celebrated as Independence Day in the United States and marks the adoption of the Declaration of Independence, which declared the thirteen American colonies free and independent from British rule.",
+//   "what is it designed to do?": "It is designed to understand human languges and provide intelligent responses, meaning it can understand the context of the conversation and give relevant responses.",
+//   // Add more question-response pairs as needed
+// };
 
 function toggleSidebar() {
   const sidebar = document.querySelector('.sidebar');
@@ -17,18 +17,7 @@ function toggleSidebar() {
 }
 
 function getResponse(message) {
-  // Convert the user's message to lowercase for case-insensitivity
-  const lowerCaseMessage = message.toLowerCase();
-
-  // Search for a response in the mapping
-  for (const question in responses) {
-    if (lowerCaseMessage.includes(question)) {
-      return responses[question];
-    }
-  }
-
-  // If no matching question found, return a default response
-  return "Thank you for your message. How can I help you further?";
+  
 }
 
 function appendMessage(sender, message) {

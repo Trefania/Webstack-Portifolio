@@ -62,7 +62,7 @@ $(document).ready(() => {
       error: (error) => {
         console.error(error);
         // Show an error message to the user
-        window.location.href = './signup.html';
+        window.location.href = 'Login-page/index.html';
       }
     });
   }
