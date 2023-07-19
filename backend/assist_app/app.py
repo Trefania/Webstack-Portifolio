@@ -1,10 +1,12 @@
 """Main Application API Routes"""
 
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
-from ai_engine import Ai_Engine
 from flask_mysqldb import MySQL
 from passlib.hash import sha256_crypt
 from pymongo import MongoClient
+import sys
+import os
+from engine import Ai_Engine
 
 app = Flask(__name__)
 
@@ -14,7 +16,7 @@ app.config['MYSQL_USER'] = 'your_mysql_username'
 app.config['MYSQL_PASSWORD'] = 'your_mysql_password'
 app.config['MYSQL_DB'] = 'your_mysql_database'
 
-@app.before_first_request
+@app.before_request
 def create_table():
     cur = mysql.connection.cursor()
     cur.execute('''
