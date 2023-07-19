@@ -1,20 +1,23 @@
 """Main Application API Routes"""
 
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
-from ai_engine import Ai_Engine
+from engine import Ai_Engine
 from flask_mysqldb import MySQL
 from passlib.hash import sha256_crypt
 from pymongo import MongoClient
+import os
+from dotenv import load_dotenv, find_dotenv
 
+load_dotenv(find_dotenv())
 app = Flask(__name__)
 
 # MySQL Configuration
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'your_mysql_username'
-app.config['MYSQL_PASSWORD'] = 'your_mysql_password'
-app.config['MYSQL_DB'] = 'your_mysql_database'
+app.config['MYSQL_HOST'] = os.environ.get('HOST')
+app.config['MYSQL_USER'] = os.environ.get('USER')
+app.config['MYSQL_PASSWORD'] = os.environ.get('PWD')
+app.config['MYSQL_DB'] = os.environ.get('DB')
 
-@app.before_first_request
+@app.before_request
 def create_table():
     cur = mysql.connection.cursor()
     cur.execute('''
@@ -33,7 +36,12 @@ mysql = MySQL(app)
 
 # MongoDB Configuration
 mongo_client = MongoClient('mongodb://localhost:27017/')
-db = mongo_client['your_mongo_db']
+db = mongo_client['assist']
+
+@app.route('/', methods=['GET'])
+def home():
+    message = {'message': 'Welcome to Assist AI'}
+    return jsonify(message), 200
 
 @app.route('/signup', methods=['GET', 'POST'])
 def sign_up():
